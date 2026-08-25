@@ -137,10 +137,17 @@ earned by participating in peer instruction quizzes during class. You will
 need an iClicker remote to participate in these quizzes. Please see
 the [Participation credit](participation.html) page for more information.
 
-To receive credit for programming assignments, you will need to meet
-with the instructor or a CA for a code walkthrough. We reserve the right
-to not award assignment credit to students who do not satisfactorily
-explain their work during a code walkthrough.
+To receive credit for programming assignments, there are two requirements
+you should be aware of:
+
+1. You will need to use a git repository provided by the instructional staff
+   for your development work. We will expect to see a "reasonable" git
+   commit history for the work you submit. By "reasonable", we mean that
+   the commits accurately represent your development work.
+2. For each assignment, you will need to meet with the instructor or
+   a CA for a code walkthrough. We reserve the right to not award assignment
+   credit to students who do not satisfactorily explain their work during
+   a code walkthrough.
 
 ## Grading scale
 
