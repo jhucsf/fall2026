@@ -38,8 +38,8 @@ CAs:
 
 Class meetings are in-person.
 
-* Section 01: MWF 9:00–9:50 am, FIXME Location
-* Section 02: MWF 10:00–10:50 am, FIXME Location
+* Section 01: MWF 9:00–9:50 am, Hodson 311
+* Section 02: MWF 10:00–10:50 am, Hodson 311
 
 ## Textbook
 
