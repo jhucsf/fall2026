@@ -23,6 +23,8 @@ Office hours:
 
 Instructor office hours: Monday and Wednesday, 1:30 pm – 3:00 pm, in Malone 240A
 
+CA office hours: see Courselore
+
 ## Course Assistants
 
 Head CAs:
