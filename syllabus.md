@@ -23,8 +23,6 @@ Office hours:
 
 Instructor office hours: Monday and Wednesday, 1:30 pm – 3:00 pm, in Malone 240A
 
-CA office hours: see Courselore
-
 ## Course Assistants
 
 Head CAs:
@@ -34,7 +32,12 @@ Head CAs:
 
 CAs:
 
-* TBA
+* Elena Vodychko, <evodych1@jh.edu>
+* Minseo Choi, <mchoi46@jhu.edu>
+* Peiyong Lin, <plin41@jh.edu>
+* Johnny Shi, <jshi61@jh.edu>
+
+See Courselore for CA office hours.
 
 ## Meeting
 
