@@ -255,3 +255,26 @@ member function. This includes things like
 
 A good mindset for testing is that you are an adversary of your own
 code, i.e., you are trying to make it break.
+
+## Submitting
+
+Start by exporting a zipfile from your work. Change directory into the
+root of your CSF project repository. Run the `ls` command: you should
+see a directory called `csf_assign01`.
+
+Run the following command:
+
+```text
+git archive -o csf_a1.zip HEAD:csf_assign01
+```
+
+This will create a zipfile called `csf_a1.zip` in the root of your
+CSF project repository.  Upload this zipfile to Gradescope as
+**Assignment 1 MS1** or **Assignment 1 MS2**, depending on which
+milestone you would like to submit.
+
+Once you've uploaded the zipfile to Gradescope, you can delete it:
+
+```text
+rm -f csf_a1.zip
+```
