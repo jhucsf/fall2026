@@ -218,7 +218,10 @@ bit trickier. One good approach is check one of the two factors to find
 the largest value it can be multiplied by without overflowing. If the other
 factor exceeds this value, then multiplying the factors will overflow.
 Let's say we want to compute the product $$a \times b$$, where $$a$$ and $$b$$
-are unsigned 64-bit integers. We can compute the value $$y = \lfloor x/a\rfloor$$,
+are unsigned 64-bit integers. We can compute the value
+
+$$y = \lfloor x/a\rfloor$$
+
 where $$x$$ is the maximum 64 bit unsigned integer value, `UINT64_MAX`.
 If the value $$y$$ is greater than $$b$$, then the product $$a \times b$$ cannot
 be computed without overflow. This technique should be useful in implementing
