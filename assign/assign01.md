@@ -7,15 +7,6 @@ Milestone 1: due Wednesday, September 9th
 
 Milestone 2: due Wednesday, September 16th
 
-<div class='admonition caution'>
-  <div class='title'>Important</div>
-  <div class='content' markdown='1'>
-This is a preliminary assignment description. Details might change,
-and it's possible that the eventual Assignment 1 might not be anything
-like what you see here.
-  </div>
-</div>
-
 # Overview
 
 In this assignment, you will implement a C++ class called `Money`
@@ -223,9 +214,10 @@ are unsigned 64-bit integers. We can compute the value
 $$y = \lfloor x/a\rfloor$$
 
 where $$x$$ is the maximum 64 bit unsigned integer value, `UINT64_MAX`.
-If the value $$y$$ is greater than $$b$$, then the product $$a \times b$$ cannot
+If $$b>y$$, then the product $$a \times b$$ cannot
 be computed without overflow. This technique should be useful in implementing
-the overloaded multiplication operator (`operator*`).
+the overloaded multiplication operator (`operator*`) and the conversion from
+`std::string` to `Money` (`from_str()`).
 
 ## Subtraction
 
