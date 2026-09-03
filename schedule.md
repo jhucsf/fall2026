@@ -31,10 +31,10 @@ Aug 31 | [Course overview](lectures/lecture01-public.pdf) | *CSAPP* 1.1–1.9 |
 Sep 2 | [Data representation, addresses](lectures/lecture02-public.pdf) | *CSAPP* 2.1 | 
 Sep 4 | [Integer representation](lectures/lecture03-public.pdf) | *CSAPP* 2.2 | 
 Sep 7 | *Labor day, no class* |  | 
-Sep 9 | [Integer arithmetic](lectures/lecture04-public.pdf) | *CSAPP* 2.3 | <span class='tentative'>A1 MS1 due</span>
+Sep 9 | [Integer arithmetic](lectures/lecture04-public.pdf) | *CSAPP* 2.3 | [A1](assign/assign01.html) MS1 due
 Sep 11 | [Floating point](lectures/lecture05-public.pdf) | *CSAPP* 2.4 | 
 Sep 14 | [Machine-level program representation](lectures/lecture06-public.pdf), [addLongs.zip (example code)](lectures/addLongs.zip) | *CSAPP* 3.1–3.4 | 
-Sep 16 | [ALU operations, arithmetic](lectures/lecture07-public.pdf), [alu.zip (example code)](lectures/alu.zip) | *CSAPP* 3.5 | <span class='tentative'>A1 MS2 due</span>
+Sep 16 | [ALU operations, arithmetic](lectures/lecture07-public.pdf), [alu.zip (example code)](lectures/alu.zip) | *CSAPP* 3.5 | [A1](assign/assign01.html) MS2 due
 Sep 18 | [Control flow](lectures/lecture08-public.pdf), [control.zip (example code)](lectures/control.zip) | *CSAPP* 3.6 | 
 Sep 21 | [Procedures, stacks](lectures/lecture09-public.pdf), [control2.zip (example code)](lectures/control2.zip) | *CSAPP* 3.7 | 
 Sep 23 | [Arrays and structs](lectures/lecture10-public.pdf), [arraystruct.zip (example code)](lectures/arraystruct.zip) | *CSAPP* 3.8–3.9 | 
