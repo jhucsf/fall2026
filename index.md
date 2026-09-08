@@ -31,9 +31,12 @@ Please email <daveho@cs.jhu.edu> if you need to get access to Courselore.
 
 ## News
 
-* **August 31** — [Assignment 1](assign/assign01.html) has two milestones,
+* **Sep 8** — An update to [Assignment 1](assign/assign01.html) clarifies
+  the intended behavior of the division operator when the dividend
+  is negative.
+* **Aug 31** — [Assignment 1](assign/assign01.html) has two milestones,
   due Wednesday, September 9th, and Wednesday, September 16th, respectively.
-* **August 25** — Welcome back! Here are a two things you should do at
+* **Aug 25** — Welcome back! Here are a two things you should do at
   your earliest convenience:
     1. You will need an iClicker remote in order to participate in peer instruction
        quizzes in class. You have two options:

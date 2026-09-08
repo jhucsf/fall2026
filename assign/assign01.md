@@ -7,6 +7,9 @@ Milestone 1: due Wednesday, September 9th
 
 Milestone 2: due Wednesday, September 16th
 
+*Update 9/8*: clarified expected behavior for division when
+the dividend is negative; see the [Division](#division) section
+
 # Overview
 
 In this assignment, you will implement a C++ class called `Money`
@@ -219,7 +222,7 @@ be computed without overflow. This technique should be useful in implementing
 the overloaded multiplication operator (`operator*`) and the conversion from
 `std::string` to `Money` (`from_str()`).
 
-## Subtraction
+### Subtraction
 
 Because it needs to handle both positive and negative addends and
 sums, your `operator+` implementation can be used to implement subtraction.
@@ -229,6 +232,34 @@ $$a - b = a + -b$$
 
 So, if you've implemented `operator+` and the unary `operator-`, it should
 be trivial to implement the two-operand form of `operator-`.
+
+### Division
+
+In the vector of `Money` objects returned by the division operator
+(`operator/`), the elements should be sorted in descending order
+by *magnitude*, meaning elements with higher magnitudes should be
+before elements with lesser magnitudes.
+
+The documentation comment in the starter code does not adequately
+document this expectation.  The original version reads (in part):
+
+```c++
+//! @return vector of Money objects splitting the left-hand
+//!         value as evenly as possible, sorted in descending
+//!         order of amount
+```
+
+It should actually read:
+
+```c++
+//! @return vector of Money objects splitting the left-hand
+//!         value as evenly as possible, sorted in descending
+//!         order of the magnitude of amount
+```
+
+Note that if the dividend (the `Money` object on the left-hand side
+of the division) is negative, then any non-zero elements in the
+returned vector should be negative.
 
 ### Writing Tests
 
