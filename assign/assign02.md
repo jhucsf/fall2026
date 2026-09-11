@@ -37,7 +37,7 @@ helper functions, and your unit tests will help you gain confidence in their
 correctness.
 
 In Milestone 2, you are required to implement the
-[`easy1`](#the-easy1-transformation) and
+[`wrap`](#the-wrap-transformation) and
 [`easy2`](#the-easy2-transformation)
 transformations in assembly language. We expect you to have comprehensive unit tests
 for the assembly language implementations of your helper functions. (In theory you can
@@ -130,7 +130,7 @@ Milestone 1: 30%
 
 Milestone 2: 35%
 
-* Functional correctness of `imgproc_easy1` and `imgproc_easy2`: 30%
+* Functional correctness of `imgproc_wrap` and `imgproc_easy2`: 30%
 * Design/coding style of assembly functions: 5%
 
 Milestone 3: 35%
@@ -194,7 +194,7 @@ You will implement the following image transformation functions in both
 C and assembly language:
 
 ```c
-// TODO easy1
+void imgproc_wrap( struct Image *in, struct Image *out, int32_t dist );
 // TODO easy2
 // TODO harder1
 void imgproc_rainbow_h( struct Image *in, struct Image *out );
@@ -204,11 +204,34 @@ These functions are declared in `imgproc.h`, and each one has a detailed API
 comment describing its function, the meaning of the parameters, and the
 meaning of the return value (for the non-`void` functions.)
 
-### The `easy1` transformation
+### The `wrap` transformation
 
-TODO
+The `wrap` transformation takes the pixels in the original image and
+moves them horizontally by a specified integer distance. For example, a
+distance of 10 would mean that each pixel in the original image would move
+10 pixels to the right. Pixels that move past the edge of the
+image wrap around back to the other edge. For example, if the wrap distance
+is 10, and the width of the image is 800, the pixels in the rightmost
+column of the original image (column 799) would be copied to column 9
+of the output image.
 
-### The `color_rot` transformation
+Note that the wrap distance could be negative. A wrap distance of -1
+would mean that every pixel moves one position to the left, and the pixels
+in the leftmost column (column 0) of the original image would move to the
+rightmost column of the output image.
+
+Also note that the transformation is expected to handle arbitrary distances,
+even if their absolute value is greater than the width of the image. For
+example, if an image is 800 pixels wide, a wrap distance of 800 should be
+treated as 0, a wrap distance of 801 should be treated as 1, as so forth.
+
+Example:
+
+Original image | Transformed image<br>(wrap distance=117)
+:------------: | :---------------:
+<a href="img/ingo.png"><img style="width: 20em;" alt="original cat image" src="img/ingo.png"></a > | <a href="img/ingo_wrap_117.png"><img style="width: 20em;" alt="rainbow cat image " src="img/ingo_wrap_117.png"></a>
+
+### The `easy2` transformation
 
 TODO
 
@@ -250,11 +273,20 @@ In these commands:
 * <code class='highlighter-rouge'><i>output.png</i></code> is the name of the output
   image file to write
 * <code class='highlighter-rouge'>[<i>args...</i>]</code> represents additional arguments
-  needed by the transformation; for example, the `FIXME` transformation needs
-  FIXME give an example of a needed command line argument
+  needed by the transformation; for example, the `wrap` transformation needs
+  one integer argument to specify the wrap distance
 
-TODO example of running a transformation that requires one or more
-command line arguments (e.g., the "wrap" transformation).
+For example, to run the `wrap` transformation with a wrap distance of
+117 using the `c_imgproc` program:
+
+```text
+mkdir -p actual
+./c_imgproc wrap input/ingo.png actual/ingo_wrap_117.png 117
+```
+
+The commands in this example would apply the `wrap` transformation
+with a blur distance of 117 to the input image `input/ingo.png` to
+product the output image file `actual/ingo_wrap_117.png`.
 
 ## Unit tests, helper functions
 
@@ -287,6 +319,7 @@ uint32_t make_pixel( uint32_t r, uint32_t g, uint32_t b, uint32_t a );
 uint16_t ramp_up( int64_t x );
 uint16_t ramp_down( int64_t x );
 void compute_rainbow_rgb( long x, uint16_t *r, uint16_t *g, uint16_t *b );
+int32_t adjust_wrap_dist( int32_t img_width, int32_t dist );
 ```
 
 ## Image tests
