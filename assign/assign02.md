@@ -241,7 +241,71 @@ TODO
 
 ### The `rainbow_h` transformation
 
-TODO describe transformation
+For each pixel in the input image, the `rainbow_h` transformation
+
+1. computes a full-intensity rainbow gradient color based on the
+   pixel's horizontal position in the image
+2. computes the pixel intensity of the source pixel, based on its
+   RGB value
+3. computes an output pixel color by applying the source's
+   pixel's intensity to the full-intensity rainbow gradient color
+
+The source pixel's column number (in the range $$0..w-1$$, where $$w$$
+is the image width) should be mapped onto the range $$0..999{,}999$$.
+This normalized column number should be computed as
+
+$$\left\lfloor \frac{j \times 999{,}999}{w - 1} \right\rfloor$$
+
+where $$j$$ is the input pixel column and $$w$$ is the image width.
+
+Next, the full-intensity RGB values of the rainbow gradient
+color should be computed. There are 5 "zones" in the gradient,
+which work as follows:
+
+Zone | Normalized columns<br>(inclusive) | RGB values
+---- | --------------------------------- | ----------
+0    | $$0..199{,}999$$                  | r=$$65{,}535$$, g=ramp up, b=$$0$$
+1    | $$200{,}000..399{,}999$$          | r=ramp down, g=$$65{,}535$$, b=$$0$$
+2    | $$400{,}000..599{,}999$$          | r=$$0$$, g=$$65{,}535$$, b=ramp up
+3    | $$600{,}000..799{,}999$$          | r=$$0$$, g=ramp down, b=$$65{,}535$$
+4    | $$800{,}000..999{,}999$$          | r=ramp up, g=$$0$$, b=$$65{,}535$$
+
+Note that the computed RGB values are in the range $$0..65{,}535$$
+rather than the usual $$0..255$$, to allow for additional precision when
+applying the intensity to the rainbow RGB color.
+
+"Ramp up" and "ramp down" mean that a color component value is either
+ramping up from $$0$$ to $$65{,}535$$ or ramping down from
+$$65{,}535$$ to $$0$$.  Let's say that the normalized pixel column is
+$$x$$ distance from the beginning of the range. (E.g., in zone 1,
+the normalized pixel column $$200{,}010$$ would be at distance $$10$$
+from the beginning of the range.) The effective color component when
+ramping up would be
+
+$$\left\lfloor \frac{65{,}535 \times x}{199{,}999} \right\rfloor$$
+
+The effective color component when ramping down is found by substituting
+$$199{,}999 - x$$ for $$x$$ in the ramping up calculation.
+
+Once the full-intensity RGB values are computed (each will be in the
+range $$0..65{,}535$$), the next step is to compute the intensity of
+the input pixel. Assuming that $$r$$, $$g$$, and $$b$$ are the red,
+green, and blue color component values of the input pixel (each in
+the range $$0.255$$), the intensity $$t$$ should be computed as
+
+$$t = 79 \times r + 128 \times g + 49 \times b$$
+
+This will yield an intensity value in the range $$0..65{,}280$$.
+Intensity-adjusted rainbow RGB values should now be computed.
+If $$c$$ is one of the full-intensity rainbow RGB values (in the
+range $$0..65{,}535$$), then the intensity-adjusted value should be
+
+$$\left\lfloor \frac{c \times t}{65{,}280} \right\rfloor$$
+
+Finally, from each intensity-adjusted RGB value $$c$$, an output
+RGB value can be computed as $$\lfloor c/256 \rfloor$$. The final
+output RGB values should then be combined with the unmodified
+alpha value of the input pixel to yield the output pixel's RGBA values.
 
 Example:
 
