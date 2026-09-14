@@ -367,7 +367,7 @@ mkdir -p actual
 ```
 
 The commands in this example would apply the `wrap` transformation
-with a blur distance of 117 to the input image `input/ingo.png` to
+with a wrap distance of 117 to the input image `input/ingo.png` to
 product the output image file `actual/ingo_wrap_117.png`.
 
 ## Unit tests, helper functions
