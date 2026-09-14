@@ -38,7 +38,7 @@ correctness.
 
 In Milestone 2, you are required to implement the
 [`wrap`](#the-wrap-transformation) and
-[`easy2`](#the-easy2-transformation)
+[`blocky`](#the-blocky-transformation)
 transformations in assembly language. We expect you to have comprehensive unit tests
 for the assembly language implementations of your helper functions. (In theory you can
 just use the ones you implemented in Milestone 1.) Note that we will not officially
@@ -130,7 +130,7 @@ Milestone 1: 30%
 
 Milestone 2: 35%
 
-* Functional correctness of `imgproc_wrap` and `imgproc_easy2`: 30%
+* Functional correctness of `imgproc_wrap` and `imgproc_blocky`: 30%
 * Design/coding style of assembly functions: 5%
 
 Milestone 3: 35%
@@ -195,7 +195,7 @@ C and assembly language:
 
 ```c
 void imgproc_wrap( struct Image *in, struct Image *out, int32_t dist );
-// TODO easy2
+void imgproc_blocky( struct Image *in, struct Image *out, int32_t blocksize );
 // TODO harder1
 void imgproc_rainbow_h( struct Image *in, struct Image *out );
 ```
@@ -229,11 +229,17 @@ Example:
 
 Original image | Transformed image<br>(wrap distance=117)
 :------------: | :---------------:
-<a href="img/ingo.png"><img style="width: 20em;" alt="original cat image" src="img/ingo.png"></a > | <a href="img/ingo_wrap_117.png"><img style="width: 20em;" alt="rainbow cat image " src="img/ingo_wrap_117.png"></a>
+<a href="img/ingo.png"><img style="width: 20em;" alt="original cat image" src="img/ingo.png"></a > | <a href="img/ingo_wrap_117.png"><img style="width: 20em;" alt="wrapped cat image " src="img/ingo_wrap_117.png"></a>
 
-### The `easy2` transformation
+### The `blocky` transformation
 
-TODO
+TODO describe the transformation
+
+Example:
+
+Original image | Transformed image<br>(block size=7)
+:------------: | :---------------:
+<a href="img/ingo.png"><img style="width: 20em;" alt="original cat image" src="img/ingo.png"></a > | <a href="img/ingo_blocky_7.png"><img style="width: 20em;" alt="blocky cat image " src="img/ingo_blocky_7.png"></a>
 
 ### The `harder1` transformation
 
