@@ -45,7 +45,7 @@ just use the ones you implemented in Milestone 1.) Note that we will not officia
 grade the quality and comprehensiveness of your unit tests until Milestone 3.
 
 In Milestone 3, you will implement the
-[`harder1`](#the-harder1-transformation) transformation and
+[`puzzle`](#the-puzzle-transformation) transformation and
 [`rainbow_h`](#the-rainbow_h-transformation)
 transformations.
 
@@ -135,7 +135,7 @@ Milestone 2: 35%
 
 Milestone 3: 35%
 
-* Functional correctness of `imgproc_harder1`: 10%
+* Functional correctness of `imgproc_puzzle`: 10%
 * Functional correctness of `imgproc_rainbow_h`: 10%
 * Unit testing of helper functions: 10%
 * Design/coding style of assembly functions: 5%
@@ -196,7 +196,7 @@ C and assembly language:
 ```c
 void imgproc_wrap( struct Image *in, struct Image *out, int32_t dist );
 void imgproc_blocky( struct Image *in, struct Image *out, int32_t blocksize );
-// TODO harder1
+void imgproc_puzzle( struct Image *in, struct Image *out, const char *positions );
 void imgproc_rainbow_h( struct Image *in, struct Image *out );
 ```
 
@@ -253,9 +253,36 @@ Original image | Transformed image<br>(block size=7)
 :------------: | :---------------:
 <a href="img/ingo.png"><img style="width: 20em;" alt="original cat image" src="img/ingo.png"></a > | <a href="img/ingo_blocky_7.png"><img style="width: 20em;" alt="blocky cat image " src="img/ingo_blocky_7.png"></a>
 
-### The `harder1` transformation
+### The `puzzle` transformation
 
-TODO
+The `puzzle` transformation divides the image into 16 equal-sized
+tiles. (This transformation can only be applied to images where
+both the width and height of the image are exact multiples of 4.)
+
+The `positions` argument is a string value containing
+16 characters. Each character is either a hex digit (`'0'`–`'9'`
+or `'a'`–`'f'`), or an underscore (`'_'`). The hex digits map onto
+tile positions as follows:
+
+<div style='text-align: center;'>
+  <img src='img/a2-tiles.svg' style='width: 320px;' alt='tile positions'>
+</div>
+
+The positions string indicates, for each tile in the output image,
+which input tile it is copied from. For example, if the tile string
+is "`a0e1d63c745b92_8`", that means that the output image
+should be arranged as
+
+<div style='text-align: center;'>
+  <img src='img/a2-tiles-permutation.svg' style='width: 320px;' alt='permuted tile positions'>
+</div>
+
+Note that the underscore character ("`_`") indicates a tile that is
+empty, and all of its pixels should be left as opaque black.
+
+Original image | Transformed image<br>(positions="`a0e1d63c745b92_8`")
+:------------: | :---------------:
+<a href="img/ingo.png"><img style="width: 20em;" alt="original cat image" src="img/ingo.png"></a > | <a href="img/ingo_puzzle_a0e1d63c745b92_8.png"><img style="width: 20em;" alt="permuted cat image " src="img/ingo_puzzle_a0e1d63c745b92_8.png"></a>
 
 ### The `rainbow_h` transformation
 
