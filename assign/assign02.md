@@ -382,7 +382,7 @@ void get_rgba( uint32_t pixel, uint32_t *r, uint32_t *g, uint32_t *b, uint32_t *
 uint32_t make_pixel( uint32_t r, uint32_t g, uint32_t b, uint32_t a );
 uint16_t ramp_up( int64_t x );
 uint16_t ramp_down( int64_t x );
-void compute_rainbow_rgb( long x, uint16_t *r, uint16_t *g, uint16_t *b );
+void compute_rainbow_rgb( int64_t x, uint16_t *r, uint16_t *g, uint16_t *b );
 int32_t adjust_wrap_dist( int32_t img_width, int32_t dist );
 ```
 
