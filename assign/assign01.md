@@ -10,6 +10,10 @@ Milestone 2: due Wednesday, September 16th
 *Update 9/8*: clarified expected behavior for division when
 the dividend is negative; see the [Division](#division) section
 
+*Update 9/14*: updated the [Your Tasks](#your-tasks) section
+with a link to the [Code Walkthroughs](codewalkthrough.html)
+page.
+
 # Overview
 
 In this assignment, you will implement a C++ class called `Money`
@@ -158,7 +162,8 @@ Note that to receive credit for the Assignment, within one week
 of submitting Milestone 2, you must meet with the instructor or a CA
 for a brief code walkthrough, in which we will ask you (and your
 partner if you are working in a pair) to explain your implementation
-in some detail.
+in some detail. See the [Code Wakthroughs](codewalkthrough.html) page
+for more information.
 
 ## Restrictions
 

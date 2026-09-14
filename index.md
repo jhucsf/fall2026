@@ -31,6 +31,8 @@ Please email <daveho@cs.jhu.edu> if you need to get access to Courselore.
 
 ## News
 
+* **Sep 14** — Details about how [Code Walkthroughs](assign/codewalkthrough.html)
+  work are available.
 * **Sep 8** — An update to [Assignment 1](assign/assign01.html) clarifies
   the intended behavior of the division operator when the dividend
   is negative.
