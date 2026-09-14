@@ -262,7 +262,7 @@ both the width and height of the image are exact multiples of 4.)
 The `positions` argument is a string value containing
 16 characters. Each character is either a hex digit (`'0'`–`'9'`
 or `'a'`–`'f'`), or an underscore (`'_'`). The hex digits map onto
-tile positions as follows:
+tile positions in the input image as follows:
 
 <div style='text-align: center;'>
   <img src='img/a2-tiles.svg' style='width: 320px;' alt='tile positions'>
