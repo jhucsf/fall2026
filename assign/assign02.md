@@ -45,9 +45,9 @@ just use the ones you implemented in Milestone 1.) Note that we will not officia
 grade the quality and comprehensiveness of your unit tests until Milestone 3.
 
 In Milestone 3, you will implement the
-[`puzzle`](#the-puzzle-transformation) transformation and
+[`puzzle`](#the-puzzle-transformation) and
 [`rainbow_h`](#the-rainbow_h-transformation)
-transformations.
+transformations in assembly language.
 
 Note that in each milestone, we expect all of the tests executed
 by your unit test program to pass. For Milestone 2 in particular, you can
