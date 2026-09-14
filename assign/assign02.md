@@ -233,7 +233,17 @@ Original image | Transformed image<br>(wrap distance=117)
 
 ### The `blocky` transformation
 
-TODO describe the transformation
+In the `blocky` transformation, each pixel in the output image is copied
+from a specific pixel of the input image, based on a *block size* parameter
+that is guaranteed to be positive.
+
+Let's say the block size is $$n$$, the output pixel column is $$j$$,
+the output pixel row is $$i$$, the image width is $$w$$, and the image
+height is $$h$$. The output pixel should be copied from the
+input pixel whose column is $$\lfloor j / n \rfloor \times n$$ and
+whose row is $$\lfloor i / n \rfloor \times n$$.
+
+Copied pixels should be copied exactly, including the alpha value.
 
 Example:
 
