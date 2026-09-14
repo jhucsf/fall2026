@@ -200,9 +200,11 @@ void imgproc_blocky( struct Image *in, struct Image *out, int32_t blocksize );
 void imgproc_rainbow_h( struct Image *in, struct Image *out );
 ```
 
-These functions are declared in `imgproc.h`, and each one has a detailed API
-comment describing its function, the meaning of the parameters, and the
+These functions are declared in `imgproc.h`, and each one has a brief API
+comment summarizing its function, the meaning of the parameters, and the
 meaning of the return value (for the non-`void` functions.)
+The full description of the behavior of each function is
+in the following sections.
 
 ### The `wrap` transformation
 
