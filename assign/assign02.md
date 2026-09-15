@@ -138,12 +138,41 @@ Milestone 3: 35%
 * Functional correctness of `imgproc_puzzle`: 10%
 * Functional correctness of `imgproc_rainbow_h`: 10%
 * Unit testing of helper functions: 10%
-* Design/coding style of assembly functions: 5%
+* Design/coding style of assembly functions, code walkthrough: 5%
 
 ## Getting started
 
-To get started, download [csf\_assign02.zip](csf_assign02.zip) and
-unzip it.
+In a terminal, change directory to your local clone of your
+CSF project repository.
+
+Download the starter code:
+
+```text
+curl -O https://jhucsf.github.io/fall2026/assign/csf_assign02.zip
+```
+
+Unzip the zipfile, and add, commit, and push the starter code to your
+CSF project repository:
+
+```text
+unzip csf_assign02.zip
+git add csf_assign02
+git commit -m'add assignment 2 starter code to project repo'
+git push
+```
+
+Now you can delete the starter code zipfile:
+
+```text
+rm csf_assign02.zip
+```
+
+Change directory into the `csf_assign02` subdirectory within your CSF
+project repository:
+
+```text
+cd csf_assign02
+```
 
 You will implement the functions in `c_imgproc_fns.c` (Milestone 1)
 and `asm_imgproc_fns.S` (Milestones 2 and 3.) You will also add
