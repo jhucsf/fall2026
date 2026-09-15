@@ -548,14 +548,22 @@ just to ensure that `%rsp` is aligned correctly.
 We *strongly* recommend that you have a comment in each function explaining
 how it uses callee-saved registers and (if relevant) stack memory, since these are
 the equivalent of local variables in assembly code. For example,
-here is a comment taken from the implementation of the `FIXME`
+here is a comment taken from the implementation of the `imgproc_wrap`
 function in the reference solution:
 
 <a name='register-memory-comment'>
 
 ```c
 /*
- * Coming soon: register/stack use comment
+ * Register use:
+ *   %r12 - pointer to input Image
+ *   %r13 - pointer to output Image
+ *   %r14d - i (current row)
+ *   %r15d - j (current column)
+ *   %ebx - wrap distance
+ *
+ * Memory use:
+ *   -4(%rbp) - saved pixel value
  */
 ```
 
