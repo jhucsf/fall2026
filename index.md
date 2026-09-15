@@ -31,6 +31,9 @@ Please email <daveho@cs.jhu.edu> if you need to get access to Courselore.
 
 ## News
 
+* **Sep 16** — [Assignment 2](assign/assign02.html) has three milestones,
+  due Friday, September 25th, Friday, October 2nd, and Friday, October 9th,
+  respectively.
 * **Sep 8** — An update to [Assignment 1](assign/assign01.html) clarifies
   the intended behavior of the division operator when the dividend
   is negative.

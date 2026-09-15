@@ -194,9 +194,12 @@ You will implement the following image transformation functions in both
 C and assembly language:
 
 ```c
-void imgproc_wrap( struct Image *in, struct Image *out, int32_t dist );
-void imgproc_blocky( struct Image *in, struct Image *out, int32_t blocksize );
-void imgproc_puzzle( struct Image *in, struct Image *out, const char *positions );
+void imgproc_wrap( struct Image *in, struct Image *out,
+                   int32_t dist );
+void imgproc_blocky( struct Image *in, struct Image *out,
+                     int32_t blocksize );
+void imgproc_puzzle( struct Image *in, struct Image *out,
+                     const char *positions );
 void imgproc_rainbow_h( struct Image *in, struct Image *out );
 ```
 
@@ -265,7 +268,7 @@ or `'a'`–`'f'`), or an underscore (`'_'`). The hex digits map onto
 tile positions in the input image as follows:
 
 <div style='text-align: center;'>
-  <img src='img/a2-tiles.svg' style='width: 320px;' alt='tile positions'>
+  <img src='img/a2-tiles.svg' style='width: 280px;' alt='tile positions'>
 </div>
 
 The positions string indicates, for each tile in the output image,
@@ -274,7 +277,7 @@ is "`a0e1d63c745b92_8`", that means that the output image
 should be arranged as
 
 <div style='text-align: center;'>
-  <img src='img/a2-tiles-permutation.svg' style='width: 320px;' alt='permuted tile positions'>
+  <img src='img/a2-tiles-permutation.svg' style='width: 280px;' alt='permuted tile positions'>
 </div>
 
 Note that the underscore character ("`_`") indicates a tile that is
