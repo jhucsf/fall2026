@@ -555,7 +555,7 @@ function in the reference solution:
 
 ```c
 /*
- * TODO example register/stack use comment
+ * Coming soon: register/stack use comment
  */
 ```
 
