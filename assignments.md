@@ -43,3 +43,4 @@ up an x86-64 Linux development environment. (There are a number of good options.
 Assignment | Type | Due
 ---------- | :--: | ---
 [Assignment 1: Making Cents](assign/assign01.html) | Pair | MS1 due Wednesday, Sep 9th<br>MS2 due Wednesday, Sep 16th
+[Assignment 2: Image Processing](assign/assign02.html) | Pair | MS1 due Friday, Sep 25th<br>MS2 due Friday, Oct 2nd<br>MS3 due Friday, Oct 9th
