@@ -31,6 +31,10 @@ Please email <daveho@cs.jhu.edu> if you need to get access to Courselore.
 
 ## News
 
+* **Sep 18** — [Assignment 2](assign/assign02.html) has been updated to
+  have a more complete set of suggested helper functions, and to show
+  a more interesting example of using both callee-saved registers and
+  memory variables.
 * **Sep 16** — [Assignment 2](assign/assign02.html) has three milestones,
   due Friday, September 25th, Friday, October 2nd, and Friday, October 9th,
   respectively.
