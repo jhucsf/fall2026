@@ -9,6 +9,11 @@ title: "Assignment 2: Image Processing"
 * Milestone 2 due **Friday, Oct 2nd** by 11 pm
 * Milestone 3 due **Friday, Oct 9th** by 11 pm
 
+*Update 9/18*: updated the [Unit tests, helper functions](#unit-tests-helper-functions)
+section with a more complete set of possible helper functions, and updated
+[the example register/memory comment](#register-memory-comment) to show
+a better example of defining variables in memory
+
 This is a **pair** assignment, so you may work with one partner.
 
 <div class='admonition danger'>
@@ -455,13 +460,17 @@ You are free to implement whatever helper functions make sense. Some of
 the helper functions defined in the reference implementation are:
 
 ```c
+int32_t get_sample_index( int32_t index, int32_t blocksize );
 int32_t compute_index( struct Image *img, int32_t row, int32_t col );
 void get_rgba( uint32_t pixel, uint32_t *r, uint32_t *g, uint32_t *b, uint32_t *a );
 uint32_t make_pixel( uint32_t r, uint32_t g, uint32_t b, uint32_t a );
 uint16_t ramp_up( int64_t x );
 uint16_t ramp_down( int64_t x );
 void compute_rainbow_rgb( int64_t x, uint16_t *r, uint16_t *g, uint16_t *b );
+uint32_t compute_intensity( uint32_t r, uint32_t g, uint32_t b );
 int32_t adjust_wrap_dist( int32_t img_width, int32_t dist );
+int32_t hexdigit_to_int( char c );
+void copy_tile( struct Image *in, struct Image *out, int32_t in_pos, int32_t out_pos );
 ```
 
 ## Image tests
@@ -549,7 +558,7 @@ just to ensure that `%rsp` is aligned correctly.
 We *strongly* recommend that you have a comment in each function explaining
 how it uses callee-saved registers and (if relevant) stack memory, since these are
 the equivalent of local variables in assembly code. For example,
-here is a comment taken from the implementation of the `imgproc_wrap`
+here is a comment taken from the implementation of the `copy_tile`
 function in the reference solution:
 
 <a name='register-memory-comment'>
@@ -559,12 +568,17 @@ function in the reference solution:
  * Register use:
  *   %r12 - pointer to input Image
  *   %r13 - pointer to output Image
- *   %r14d - i (current row)
- *   %r15d - j (current column)
- *   %ebx - wrap distance
+ *   %r14d - pixel row in tile (i)
+ *   %r15d - pixel column in tile (j)
  *
- * Memory use:
- *   -4(%rbp) - saved pixel value
+ * Memory (32 bytes available, 28 bytes used):
+ *   -4(%rbp) - tile height (tile_h)
+ *   -8(%rbp) - tile width (tile_w)
+ *   -12(%rbp) - source tile row (src_tr)
+ *   -16(%rbp) - source tile column (src_tc)
+ *   -20(%rbp) - dest tile row (dest_tr)
+ *   -24(%rbp) - dest tile column (dest_tc)
+ *   -28(%rbp) - source pixel (src_px)
  */
 ```
 
