@@ -31,6 +31,8 @@ Please email <daveho@cs.jhu.edu> if you need to get access to Courselore.
 
 ## News
 
+* **Oct 1** — The [Code Walkthroughs](assign/codewalkthrough.html) page
+  has been updated to clarify some additional details.
 * **Sep 18** — [Assignment 2](assign/assign02.html) has been updated to
   have a more complete set of suggested helper functions, and to show
   a more interesting example of using both callee-saved registers and

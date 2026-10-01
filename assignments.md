@@ -36,6 +36,10 @@ not make a significant contribution.
 
 Please read the [style guidelines](resources/style.html) so that you know what our coding style expectations are.
 
+Please also read the [expectations for code walkthroughs](assign/codewalkthrough.html),
+since doing a code walkthrough is a requirement for receiving credit for
+each assignment.
+
 **Important**: All assignments must compile and run on x86-64 Linux.
 Please see the [Resources](resources.html) page for information on setting
 up an x86-64 Linux development environment. (There are a number of good options.)
