@@ -48,3 +48,4 @@ Assignment | Type | Due
 ---------- | :--: | ---
 [Assignment 1: Making Cents](assign/assign01.html) | Pair | MS1 due Wednesday, Sep 9th<br>MS2 due Wednesday, Sep 16th
 [Assignment 2: Image Processing](assign/assign02.html) | Pair | MS1 due Friday, Sep 25th<br>MS2 due Friday, Oct 2nd<br>MS3 due Friday, Oct 9th
+[Assignment 3: Cache Simulator](assign/assign03.html) | Pair | MS1 due Friday, Oct 16th<br>MS2 due Friday, October 30th<br>MS3 due Friday, Nov 6th
