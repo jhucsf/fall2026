@@ -762,6 +762,13 @@ my_func:
 	ret
 ```
 
+## Code walkthrough
+
+Within one week of the due date of the last milestone, we expect
+you to arrange a time to meet with the instructor or a CA for a
+brief code walkthrough. See the [Code Walkthroughs](codewalkthrough.html)
+page for detail.
+
 ## Submitting
 
 Before you upload your submission, make sure that your `README.txt`
