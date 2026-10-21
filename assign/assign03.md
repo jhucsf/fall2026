@@ -16,6 +16,11 @@ on Milestone 3, please post privately (to instructors and CAs) on Courselore
 to request permission. Note that late hours may *not* be used on
 Milestone 1, and at most 48 late hours may be used on Milestone 2.
 
+*Update 10/21*: Added a callout to the [Getting started](#getting-started)
+section clarifying the expectation that having a detailed commit history
+documenting development progress is a requirement for receiving credit
+for the assignment.
+
 # Cache simulator
 
 **Acknowledgment**: This assignment was originally developed by
@@ -41,6 +46,16 @@ rm csf_assign03.zip
 git add csf_assign03
 git commit -m'start CSF assignment 3'
 ```
+
+<div class='admonition caution'>
+  <div class='title'>Important</div>
+  <div class='content' markdown='1'>
+As you work on your code for this assignment, please understand
+that having a detailed commit history showing an accurate picture of
+your development progress is a requirement for receiving credit for
+the assignment.
+  </div>
+</div>
 
 ## Milestone 1 (5 points)
 
