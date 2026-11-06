@@ -31,6 +31,7 @@ Please email <daveho@cs.jhu.edu> if you need to get access to Courselore.
 
 ## News
 
+* **Nov 6** — [Assignment 4](assign/assign04.html) is due Monday, November 16th.
 * **Oct 21** — Updated the description for [Assignment 3](assign/assign03.html)
   to state more clearly that having a git commit history that shows the
   incremental development progress is a requirement for receiving credit

@@ -60,7 +60,7 @@ Nov 6 | Exam 2 review session |  | [A3](assign/assign03.html) MS3 due
 Nov 9 | **Exam 2** (in class) |  | 
 Nov 11 | [Unix I/O, files](lectures/lecture25-public.pdf) | *CSAPP* 10.1–10.11 | 
 Nov 13 | [Networks, Internet Protocol](lectures/lecture26-public.pdf) | *CSAPP* 11.1–11.3 | 
-Nov 16 | [Sockets, Application Protocols](lectures/lecture27-public.pdf), [sockets.zip (example code)](lectures/sockets.zip) | *CSAPP* 11.4 | <span class='tentative'>A4 due</span>
+Nov 16 | [Sockets, Application Protocols](lectures/lecture27-public.pdf), [sockets.zip (example code)](lectures/sockets.zip) | *CSAPP* 11.4 | [A4](assign/assign04.html) due
 Nov 18 | [Network applications, HTTP](lectures/lecture28-public.pdf), [webclient.zip (example code)](lectures/webclient.zip), [webserver.zip (example code)](lectures/webserver.zip) | *CSAPP* 11.4–11.6 | 
 Nov 20 | [Concurrency with pthreads](lectures/lecture29-public.pdf), [mt_webserver.zip (example code)](lectures/mt_webserver.zip) | *CSAPP* 12.3 | 
 Nov 23–27 | *Fall Recess, no class* |  | 
