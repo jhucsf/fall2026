@@ -36,10 +36,10 @@ Nov 16,"Sockets, Application Protocols",lectures/lecture27-public.pdf,sockets.zi
 Nov 18,"Network applications, HTTP",lectures/lecture28-public.pdf,"[webclient.zip (example code)](lectures/webclient.zip), [webserver.zip (example code)](lectures/webserver.zip)",*CSAPP* 11.4–11.6,
 Nov 20,"Concurrency with pthreads",lectures/lecture29-public.pdf,mt_webserver.zip,*CSAPP* 12.3,
 Nov 23–27,"*Fall Recess, no class*"
-Nov 30,"Thread synchronization",lectures/lecture30-public.pdf,synch.zip,*CSAPP* 12.4–12.5,"<span class='tentative'>A5 MS1 due</span>"
+Nov 30,"Thread synchronization",lectures/lecture30-public.pdf,synch.zip,*CSAPP* 12.4–12.5,"[A5](assign/assign05.html) MS1 due<br>Tues 12/1"
 Dec 2,"Parallelism, concurrency issues",lectures/lecture31-public.pdf,synch2.zip,*CSAPP* 12.6–12.7,
 Dec 4,"Concurrency with processes",lectures/lecture32-public.pdf,mp_webserver.zip,*CSAPP* 12.1,
 Dec 7,"Concurrency with I/O multiplexing",lectures/lecture33-public.pdf,iomux.zip,*CSAPP* 12.2,
 Dec 9,Bonus Topics
-Dec 11,"Exam 3 review session",,,,"<span class='tentative'>A5 MS2 due</span>"
+Dec 11,"Exam 3 review session",,,,"[A5](assign/assign05.html) MS2 due"
 Dec 18,"**Exam 3**, 9 am, Gilman 50"

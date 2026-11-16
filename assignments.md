@@ -50,3 +50,4 @@ Assignment | Type | Due
 [Assignment 2: Image Processing](assign/assign02.html) | Pair | MS1 due Friday, Sep 25th<br>MS2 due Friday, Oct 2nd<br>MS3 due Friday, Oct 9th
 [Assignment 3: Cache Simulator](assign/assign03.html) | Pair | MS1 due Friday, Oct 16th<br>MS2 due Friday, October 30th<br>MS3 due Friday, Nov 6th
 [Assignment 4: Parallel Quicksort](assign/assign04.html) | Pair | Monday, November 16th
+[Assignment 5: Restaurant Order System](assign/assign05.html) | Pair | MS1 due Tuesday, December 1st<br>MS2 due Friday, Dec 11th

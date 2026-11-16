@@ -31,6 +31,10 @@ Please email <daveho@cs.jhu.edu> if you need to get access to Courselore.
 
 ## News
 
+* **Nov 16** — We will *not* require code walkthroughs for Assignment 4.
+* **Nov 16** — [Assignment 5](assign/assign05.html) has two milestones, due
+  Tuesday, Dec 1st and Friday, Dec 11th, respectively. Note that late hours
+  may not be used on Milestone 2; please plan accordingly.
 * **Nov 6** — [Assignment 4](assign/assign04.html) is due Monday, November 16th.
 * **Oct 21** — Updated the description for [Assignment 3](assign/assign03.html)
   to state more clearly that having a git commit history that shows the
